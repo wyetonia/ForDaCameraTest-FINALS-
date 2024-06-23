@@ -1,0 +1,116 @@
+﻿<Page x:Class="ForDaCameraTest_FINALS_.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ForDaCameraTest_FINALS_"
+      mc:Ignorable="d" 
+      d:DesignHeight="870" d:DesignWidth="1000"
+      Title="Page1">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="620"/>
+            </Grid.RowDefinitions>
+
+            <Button Margin="25,10,214,10" Content="Item ID"
+                        FontFamily="Segoe UI Black"/>
+            <Button Margin="214,10,25,10" Content="Claim ID"
+                        FontFamily="Segoe UI Black"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="pic" Grid.Column="0" Margin="25,0,0,40" Width="158" 
+                       HorizontalAlignment="Left" Stretch="UniformToFill"/>
+
+                <ComboBox x:Name="cmbCamera" Margin="25,174,18,0" SelectionChanged="cmbCamera_SelectionChanged"/>
+
+                <Button x:Name="btnStart" Grid.Column="1" Margin="40,10,60,145" Content="START CAMERA" Grid.ColumnSpan="2" Click="btnStart_Click"/>
+                <Button x:Name="btnCapture" Grid.Column="1" Margin="40,82,60,73" Content="TAKE PHOTO" Grid.ColumnSpan="2" Click="btnCapture_Click"/>
+                <Button x:Name="btnUpload" Grid.Column="1" Margin="40,155,60,0" Content="UPLOAD" Grid.ColumnSpan="2"/>
+            </Grid>
+
+            <Label Grid.Row="2" Margin="25,20,25,570" Content="Item Name"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="110,20,25,570"
+                   FontSize="13" FontFamily="Cascadia Code"
+                   VerticalContentAlignment="Center"/>
+            <Label Grid.Row="2" Margin="25,70,25,520" Content="Item Status"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="110,70,25,520"
+                   FontSize="13" FontFamily="Cascadia Code"
+                   VerticalContentAlignment="Center"/>
+            <Label Grid.Row="2" Margin="25,120,25,470" Content="Item Color"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <ComboBox Grid.Row="2" Margin="110,120,25,470"
+                      FontSize="13" FontFamily="Cascadia Code"
+                      VerticalContentAlignment="Center">
+                <ComboBoxItem>Red</ComboBoxItem>
+                <ComboBoxItem>Orange</ComboBoxItem>
+                <ComboBoxItem>Yellow</ComboBoxItem>
+                <ComboBoxItem>Green</ComboBoxItem>
+                <ComboBoxItem>Blue</ComboBoxItem>
+                <ComboBoxItem>Violet</ComboBoxItem>
+                <ComboBoxItem>Pink</ComboBoxItem>
+                <ComboBoxItem>Black</ComboBoxItem>
+                <ComboBoxItem>White</ComboBoxItem>
+                <ComboBoxItem>Gray</ComboBoxItem>
+                <ComboBoxItem>Brown</ComboBoxItem>
+                <ComboBoxItem>Beige</ComboBoxItem>
+                <ComboBoxItem>Multi-color</ComboBoxItem>
+                <ComboBoxItem>Transparent</ComboBoxItem>
+            </ComboBox>
+            <Label Grid.Row="2" Margin="25,170,25,420" Content="Item Description"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="25,220,25,320"
+                     FontSize="13" FontFamily="Cascadia Code"/>
+            <Label Grid.Row="2" Margin="25,320,25,270" Content="Item Location"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="125,320,25,270"
+                     FontSize="13" FontFamily="Cascadia Code"
+                     VerticalContentAlignment="Center"/>
+            <Label Grid.Row="2" Margin="25,370,25,220" Content="Surrender First Name"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="175,370,25,220"
+                     FontSize="13" FontFamily="Cascadia Code"
+                     VerticalContentAlignment="Center"/>
+            <Label Grid.Row="2" Margin="25,420,25,170" Content="Surrender Last Name"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="175,420,25,170"
+                     FontSize="13" FontFamily="Cascadia Code"
+                     VerticalContentAlignment="Center"/>
+            <Label Grid.Row="2" Margin="25,470,25,120" Content="Surrender Role"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <ComboBox Grid.Row="2" Margin="135,470,25,120"
+                      FontSize="13" FontFamily="Cascadia Code"
+                      VerticalContentAlignment="Center">
+                <ComboBoxItem>Student</ComboBoxItem>
+                <ComboBoxItem>Employee</ComboBoxItem>
+            </ComboBox>
+            <Label Grid.Row="2" Margin="25,520,25,70" Content="Surrender Date"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBlock Grid.Row="2" Margin="140,519,25,71" x:Name="tbSurDate"
+                       VerticalAlignment="Center"
+                       FontSize="13" FontFamily="Cascadia Code" Foreground="Red"/>
+            <Label Grid.Row="2" Margin="25,570,25,20" Content="Staff ID"
+                   FontSize="13" FontFamily="Segoe UI Black"/>
+            <TextBox Grid.Row="2" Margin="95,570,25,20"
+                   FontSize="13" FontFamily="Cascadia Code"
+                   VerticalContentAlignment="Center"/>
+
+        </Grid>
+    </Grid>
+</Page>
