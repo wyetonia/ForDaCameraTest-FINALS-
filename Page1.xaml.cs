@@ -102,5 +102,21 @@ namespace ForDaCameraTest_FINALS_
                 encoder.Save(fileStream);
             }
         }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            tbItemName.Clear();
+            tbItemStatus.Clear();
+            tbItemDesc.Clear();
+            tbItemLoc.Clear();
+            tbSurFirstName.Clear();
+            tbSurLastName.Clear();
+            tbStaffIF.Clear();
+
+            cbItemColor.SelectedIndex = -1;
+            cbSurRole.SelectedIndex = -1;
+
+            pic.Source = null;
+        }
     }
 }

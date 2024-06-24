@@ -15,25 +15,23 @@ using System.Windows.Shapes;
 namespace ForDaCameraTest_FINALS_
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for VerifyWindowStaff.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VerifyWindowStaff : Window
     {
-        public MainWindow()
+        public VerifyWindowStaff()
         {
             InitializeComponent();
         }
 
-        private void btnReport_Click(object sender, RoutedEventArgs e)
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-            Page1 page1 = new Page1();
-            MainFrame.Navigate(page1);
+
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Window_SourceInitialized(object sender, EventArgs e)
         {
-            VerifyWindowStaff vp = new VerifyWindowStaff();
-            vp.Show();
+
         }
     }
 }

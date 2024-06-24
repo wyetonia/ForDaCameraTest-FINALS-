@@ -17,14 +17,13 @@
             <ColumnDefinition Width="400"/>
         </Grid.ColumnDefinitions>
 
-        <!--Welcome user-->
-        <Grid Grid.RowSpan="1" Background="#FF5F2F9C">
-            <TextBlock x:Name="WelcomeAdmin" Text="Welcome user!" HorizontalAlignment="Left"
-        Margin="10" FontSize="20" FontFamily="Segoe UI Black" Foreground="White"/>
+        <Grid Grid.RowSpan="2" Background="#FF5F2F9C"/>
 
-        </Grid>
+        <TextBlock x:Name="WelcomeAdmin" Text="Welcome user!" HorizontalAlignment="Left"
+                   Margin="10" FontSize="20" FontFamily="Segoe UI Black" Foreground="White"/>
 
-        <Button Grid.Row="1" Content="Go to Page 1" Margin="10,10,458,10" FontSize="15" FontFamily="Segoe UI Black" Click="Button_Click"/>
+        <Label Grid.Row="1" Content="Hello" Margin="5"/>
+        <Button Grid.Row="1" Content="Go to verify" Margin="99,4,351,6" Click="Button_Click"/>
 
         <TextBlock Grid.Column="1" Grid.Row="0" x:Name="tbdate" HorizontalAlignment="Right" 
                    Margin="10" VerticalAlignment="Center" FontSize="15" FontFamily="Segoe UI Italic" 
@@ -151,12 +150,12 @@
 
 
         <!--Default Buttons-->
-        <Button Grid.Column="1" Grid.Row="1" Margin="25,10,275,10"
-                Content="REPORT" FontFamily="Segoe UI Black"/>
+        <Button x:Name="btnReport" Grid.Column="1" Grid.Row="1" Margin="25,10,275,10"
+                Content="REPORT" FontFamily="Segoe UI Black" Click="btnReport_Click"/>
         <Button Grid.Column="1" Grid.Row="1" Margin="150,10,150,10"
                 Content="EDIT" FontFamily="Segoe UI Black"/>
         <Button Grid.Column="1" Grid.Row="1" Margin="275,10,25,10"
                 Content="LOG OUT" FontFamily="Segoe UI Black" 
-                Background="#FFFF4D4D" Click="Button_Click"/>
+                Background="#FFFF4D4D"/>
     </Grid>
 </Window>
